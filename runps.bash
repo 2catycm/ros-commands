@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy ByPass -File "/mnt/d/EnglishStandardPath/Practice_File/P_Intelligent_Robotics/lab6_smartcar_gazebo/commands/runps.ps1"

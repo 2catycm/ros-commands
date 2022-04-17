@@ -1,0 +1,2 @@
+check_urdf smartcar.urdf
+urdf_to_graphiz smartcar.urdf
