@@ -17,6 +17,12 @@ else
         fi
         CUR_DIR=$(dirname "$CUR_FILE")
 fi
+# If there is an initros function defined, call it to init ros.
+funcname="initros"
+if [ "$(type -t $funcname)" = "function" ] ; then
+        initros
+        echo "source_devel.bash: ros env initialized."
+fi
 #去掉路径中的相对路径，如a/..b/c
 cd "$CUR_DIR"
 CUR_DIR=$PWD
